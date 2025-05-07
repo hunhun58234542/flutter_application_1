@@ -7,19 +7,14 @@ void main() {
 class HGAApp extends StatelessWidget {
   const HGAApp({super.key});
 
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'HGA会員アプリ',
-
-titeli'HGA会員証アプリ';
       theme: ThemeData(
         primarySwatch: Colors.blue,
-      printf('個人名と番号を入力してください');
-
-printf('個人事も番号なので外部に漏らさないで下さい'),
-    home: const HomeScreen(),
+      ),
+      home: const HomeScreen(),
     );
   }
 }
@@ -32,9 +27,8 @@ class HomeScreen extends StatelessWidget {
     final List<Map<String, dynamic>> menuItems = [
       {
         'title': '会員証表示',
-        'content': 'assets/HGAHPQR.png',
+        'content': 'images/HGAHPQR.jpg',
         'isImage': true,
-         'content': '個人事に発行される番号/QRなので外部に教えてないで下さい。',
       },
       {
         'title': '募集中のツアーバイト年間スケジュール',
@@ -76,7 +70,7 @@ class HomeScreen extends StatelessWidget {
       },
       {
         'title': 'HGA特典情報',
-        'content': 'クラブレンタル\n練習場の学割利用\nHGAコンペにて
+        'content': 'クラブレンタル\n練習場の学割利用\nHGAコンペにて'
             '  - クラブレンタルは、事前に予約が必要です。',
         'isImage': false,
       },
@@ -137,7 +131,7 @@ class HomeScreen extends StatelessWidget {
 
 class DetailScreen extends StatelessWidget {
   final String title;
-  final String content;
+  final dynamic content;
   final bool isImage;
 
   const DetailScreen({
@@ -156,9 +150,9 @@ class DetailScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: isImage
-            ? Image.asset(content)
+            ? Image.asset(content as String)
             : SingleChildScrollView(
-                child: Text(content),
+                child: Text(content as String),
               ),
       ),
     );
