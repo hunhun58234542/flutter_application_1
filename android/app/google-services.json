@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "146720884114",
+    "project_id": "kakeiboz",
+    "storage_bucket": "kakeiboz.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146720884114:android:cd847c093f8c05bb632d4b",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO0mZIhqoD7dJUOONpnUEx7ZGsK1IUbvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146720884114:android:406a92538ab5bb5e632d4b",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO0mZIhqoD7dJUOONpnUEx7ZGsK1IUbvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
